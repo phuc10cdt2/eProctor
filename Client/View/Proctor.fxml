@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="570.0" prefHeight="490.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.Proctor.ProctorController">
+  <children>
+    <TabPane minHeight="250.0" minWidth="570.0" prefHeight="490.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab fx:id="manageInvigilation" style="" text="Manage Invigilation">
+          <content>
+            <fx:include fx:id="manageInvigilationView" source="Proctor/ManageInvigilationView.fxml" minHeight="200.0" minWidth="200.0" prefHeight="470.0" />
+          </content>
+        </Tab>
+        <Tab fx:id="myProfile" style="" text="My Profile">
+          <content>
+            <fx:include fx:id="myProfileView" source="Proctor/MyProfileView.fxml" minHeight="200.0" minWidth="200.0" prefHeight="490.0" prefWidth="800.0000999999975" />
+          </content>
+        </Tab>
+        <Tab fx:id="invigilate" style="" text="Invilgilate">
+          <content>
+            <fx:include fx:id="invigilateView" source="Proctor/InvigilateView.fxml" minHeight="200.0" minWidth="200.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button fx:id="logOutButton" minHeight="23.0" mnemonicParsing="false" onAction="#processLogOut" prefHeight="28.0" prefWidth="95.0" text="Log Out" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="6.0" />
+    <Label fx:id="timerLabel" prefHeight="28.999908447265625" style="-fx-text-fill: #008AFF;&#10;-fx-font-size: 30px;" text="00:00:00" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="2.0" />
+  </children>
+  <!--
+  <stylesheets>
+    <URL value="@../../res/JMetroLightTheme.css" />
+  </stylesheets>
+  */ -->
+  <stylesheets>
+    <URL value="@../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

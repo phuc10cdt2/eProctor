@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="200.0" minWidth="400.0" prefHeight="470.0" prefWidth="800.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.Student.TakeExamViewController">
+  <children>
+    <TableView fx:id="coursesTable" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="382.0" AnchorPane.topAnchor="14.0">
+      <columns>
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="0.0" prefWidth="99.0" resizable="true" text="Course Code" fx:id="courseCodeColumn" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="0.0" prefWidth="215.0" resizable="true" text="Course Name" fx:id="courseNameColumn" />
+        <TableColumn editable="false" maxWidth="5000.0" minWidth="0.0" prefWidth="82.0" resizable="true" text="Exam Date" fx:id="examDateColumn" />
+      </columns>
+    </TableView>
+    <HBox id="HBox" alignment="CENTER" minHeight="20.0" minWidth="200.0" prefWidth="358.6666259765625" spacing="5.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+      <children>
+        <Button id="ConnectButton" fx:id="connectButton" minHeight="30.0" minWidth="166.0" mnemonicParsing="false" onAction="#handleConnectButton" prefHeight="30.0" prefWidth="177.0" text="Connect to Proctor" />
+        <Button fx:id="startExamButton" mnemonicParsing="false" onAction="#handleStartExamButton" prefHeight="30.0" prefWidth="177.0" text="Start Exam" />
+      </children>
+      <padding>
+        <Insets />
+      </padding>
+    </HBox>
+    <ImageView fx:id="webcamView" fitHeight="269.0" fitWidth="358.66666666666663" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0" />
+    <GridPane prefWidth="339.0" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="20.0">
+      <children>
+        <Label fx:id="statusLabel" prefHeight="30.0" prefWidth="287.0" style="-fx-font-size: 16px;" text="Label" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label style="-fx-font-size: 16px;" text="Status" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="67.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="218.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+  <stylesheets>
+    <URL value="@../../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

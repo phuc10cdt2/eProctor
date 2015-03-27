@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="150.0" prefWidth="334.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.Student.BookEditExamController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <GridPane fx:id="gridPane" hgap="0.0" layoutX="22.0" layoutY="15.0" prefWidth="272.0000999999975" vgap="2.0">
+      <children>
+        <Label fx:id="courseCodeLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <stylesheets>
+            <URL value="@../../../res/JMetroLightTheme.css" />
+          </stylesheets>
+        </Label>
+        <Label fx:id="courseNameLabel" style="-fx-font-size: 18px;" styleClass="label-bright" text="Label" textAlignment="LEFT" textOverrun="CLIP" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Label style="" styleClass="label-bright" text="Date" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label styleClass="label-bright" text="Time" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <ComboBox fx:id="timeSelectComboBox" prefHeight="30.0" prefWidth="257.0" promptText="Select Time" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <GridPane.margin>
+            <Insets fx:id="x1" />
+          </GridPane.margin>
+        </ComboBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="41.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="255.0" minWidth="10.0" prefWidth="231.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <stylesheets>
+        <URL value="@../../../res/JMetroLightTheme.css" />
+      </stylesheets>
+    </GridPane>
+    <HBox id="HBox" alignment="CENTER" layoutX="63.0" layoutY="111.0" prefWidth="231.0" spacing="5.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#handleOk" prefWidth="106.0" text="OK">
+          <HBox.margin>
+            <Insets fx:id="x1" />
+          </HBox.margin>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#handleCancel" prefWidth="106.0" text="Cancel" HBox.margin="$x1" />
+      </children>
+      <padding>
+        <Insets top="5.0" />
+      </padding>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" focusTraversable="false" maxHeight="2000.0" maxWidth="2000.0" minHeight="230.0" minWidth="300.0" prefHeight="470.0" prefWidth="800.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.LoginController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" fillWidth="true" layoutX="250.0" layoutY="72.0" minHeight="230.0" minWidth="300.0" spacing="0.0">
+      <children>
+        <TextField id="textField1" fx:id="username" prefHeight="40.0" prefWidth="300.0" promptText="Username" />
+        <PasswordField id="passwordField1" fx:id="password" prefHeight="40.0" prefWidth="300.0" promptText="Password">
+          <VBox.margin>
+            <Insets top="10.0" fx:id="x1" />
+          </VBox.margin>
+        </PasswordField>
+        <ComboBox fx:id="domainComboBox" prefHeight="40.0" prefWidth="300.0" promptText="Domain" style="&#10;" VBox.margin="$x1">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Student" />
+              <String fx:value="Staff" />
+            </FXCollections>
+          </items>
+          <stylesheets>
+            <URL value="@../../res/JMetroLightTheme.css" />
+          </stylesheets>
+        </ComboBox>
+        <Button id="button1" fx:id="loginButton" defaultButton="true" onAction="#loginClicked" prefHeight="40.0" prefWidth="300.0" text="Login">
+          <VBox.margin>
+            <Insets top="30.0" />
+          </VBox.margin>
+        </Button>
+        <Label fx:id="errorLabel" prefWidth="300.0" style="-fx-text-fill: #ff3600;&#10;-fx-font-size: 18px;&#10;&#10;" styleClass="label-bright" text="" textAlignment="CENTER">
+          <VBox.margin>
+            <Insets top="5.0" />
+          </VBox.margin>
+        </Label>
+        <Hyperlink text="Forgot Password?">
+          <stylesheets>
+            <URL value="@../../res/JMetroLightTheme.css" />
+          </stylesheets>
+        </Hyperlink>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

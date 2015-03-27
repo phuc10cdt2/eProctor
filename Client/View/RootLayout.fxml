@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="AnchorPane" minHeight="400.0" minWidth="400.0" prefHeight="605.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <stylesheets>
+    <URL value="@../../res/JMetroLightTheme.css" />
+  </stylesheets>
+  <top>
+    <AnchorPane minHeight="100.0" minWidth="450.0" prefHeight="105.0" prefWidth="800.0">
+      <children>
+        <ImageView id="eproctor.png" fitHeight="181.0" fitWidth="483.0" x="303.0" y="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
+          <image>
+            <Image url="@../../res/eproctor.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <ImageView id="ntu_logo.png" fitHeight="65.0" fitWidth="200.0" x="7.0" y="35.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="35.0">
+          <image>
+            <Image url="@../../res/ntu_logo.png" preserveRatio="true" smooth="true" />
+          </image>
+        </ImageView>
+        <MenuBar minHeight="25.0" minWidth="400.0" prefHeight="30.0" prefWidth="800.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <menus>
+            <Menu mnemonicParsing="false" style="" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </children>
+    </AnchorPane>
+  </top>
+</BorderPane>

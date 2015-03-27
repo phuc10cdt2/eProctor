@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="400.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.Proctor.BookNewDialogController">
+  <children>
+    <TableView fx:id="BookTable" prefHeight="243.0" prefWidth="400.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="152.0" text="Date" fx:id="DateColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="236.0" text="Course" fx:id="CourseColumn" />
+      </columns>
+    </TableView>
+    <HBox id="HBox" alignment="CENTER" prefHeight="38.0" prefWidth="294.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <children>
+        <Button mnemonicParsing="false" onAction="#bookHandler" prefHeight="38.0" prefWidth="140.0" text="Book" />
+        <Button mnemonicParsing="false" onAction="#returnHandler" prefHeight="38.0" prefWidth="140.0" text="Return" />
+      </children>
+    </HBox>
+  </children>
+  <stylesheets>
+    <URL value="@../../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

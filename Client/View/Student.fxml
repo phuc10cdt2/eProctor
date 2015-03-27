@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="550.0" prefHeight="500.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.Student.StudentController">
+  <children>
+    <TabPane fx:id="tabPane" minHeight="300.0" minWidth="550.0" prefHeight="500.0" prefWidth="800.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <stylesheets>
+        <URL value="@../../res/JMetroLightTheme.css" />
+      </stylesheets>
+      <tabs>
+        <Tab fx:id="tab" style="" text="Manage Exam">
+          <content>
+            <fx:include fx:id="manageExamView" source="Student/ManageExamView.fxml" minHeight="250.0" minWidth="400.0" />
+          </content>
+        </Tab>
+        <Tab fx:id="tab" style="" text="My Profile">
+          <content>
+            <fx:include id="profile" fx:id="myProfileView" source="Student/MyProfileView.fxml" minHeight="250.0" minWidth="400.0" style="" />
+          </content>
+        </Tab>
+        <Tab fx:id="tab" style="" text="Take Exam">
+          <content>
+            <fx:include fx:id="takeExamView" source="Student/TakeExamView.fxml" minHeight="250.0" />
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button fx:id="logOutButton" minHeight="22.0" mnemonicParsing="false" onAction="#processLogOut" prefHeight="28.0" prefWidth="95.0" style="" text="Log Out" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="5.0" />
+    <Label id="timer" fx:id="timerLabel" prefHeight="28.999908447265625" style="-fx-text-fill: #008AFF;&#10;-fx-font-size: 30px;" text="00:00:00" AnchorPane.rightAnchor="140.0" AnchorPane.topAnchor="0.0" />
+  </children>
+  <stylesheets>
+    <URL value="@../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>

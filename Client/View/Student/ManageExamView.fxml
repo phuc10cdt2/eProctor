@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="800.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="Client.Student.ManageExamViewController">
+  <children>
+    <TableView fx:id="coursesTable" prefHeight="463.0" prefWidth="772.0" style="-fx-background-color: #cccccc;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <columns>
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="194.0" text="Course Code" fx:id="courseCodeColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="306.0" text="Course" fx:id="courseNameColumn" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="254.0" text="Date" fx:id="courseDateColumn" />
+      </columns>
+    </TableView>
+    <HBox id="HBox" alignment="CENTER" spacing="5.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+      <children>
+        <Button fx:id="bookButton" mnemonicParsing="false" onAction="#handleBook" prefHeight="30.0" prefWidth="100.0" text="Book">
+          <HBox.margin>
+            <Insets />
+          </HBox.margin>
+        </Button>
+        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="100.0" text="Cancel" />
+      </children>
+    </HBox>
+    <TextField id="courseLabel" fx:id="courseField" prefWidth="200.0" text="Course" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="400.0" />
+  </children>
+  <stylesheets>
+    <URL value="@../../../res/JMetroLightTheme.css" />
+  </stylesheets>
+</AnchorPane>
